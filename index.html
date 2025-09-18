@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="calculator">
+            <input type="text" id="display" readonly>
+            <div id="keys">
+                <button onclick="clearDisplay()" class="clear-btn">C</button>
+                <button onclick="keyToDisplay('**')" class="special-btn">^</button>
+                <button onclick="keyToDisplay('%')" class="special-btn">%</button>
+                <button onclick="keyToDisplay('/')" class="special-btn">÷</button>
+                <button onclick="keyToDisplay('7')">7</button>
+                <button onclick="keyToDisplay('8')">8</button>
+                <button onclick="keyToDisplay('9')">9</button>
+                <button onclick="keyToDisplay('*')" class="special-btn">×</button>
+                <button onclick="keyToDisplay('4')">4</button>
+                <button onclick="keyToDisplay('5')">5</button>
+                <button onclick="keyToDisplay('6')">6</button>
+                <button onclick="keyToDisplay('+')" class="special-btn">+</button>
+                <button onclick="keyToDisplay('1')">1</button>
+                <button onclick="keyToDisplay('2')">2</button>
+                <button onclick="keyToDisplay('3')">3</button>
+                <button onclick="keyToDisplay('-')" class="special-btn">-</button>
+                <button onclick="keyToDisplay('0')">0</button>
+                <button onclick="keyToDisplay('.')">.</button>
+                <button onclick="del()" class="clear-btn">del</button>
+                <button onclick="calculate()" class="equality-btn">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
